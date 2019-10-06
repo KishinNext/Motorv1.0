@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Users/usuario/Desktop/MotorProRePro.brd
+Job           : C:/Users/Raquel/Desktop/Motorv1.0/Motorpro/MotorProRePro.brd
 
-Start at      : 23:19:42 (9/17/2019)
-End at        : 23:19:44 (9/17/2019)
-Elapsed time  : 00:00:01
+Start at      : 13:16:44 (06-Oct-19)
+End at        : 13:16:58 (06-Oct-19)
+Elapsed time  : 00:00:06
 
-Signals       :    23   RoutingGrid: 25 mil  Layers: 1
-Connections   :    44   predefined:  0 ( 0 Vias )
+Signals       :    28   RoutingGrid: 22.5 mil  Layers: 2
+Connections   :    55   predefined:  49 ( 0 Vias )
 
-Router memory :   53790
+Router memory :   152096
 
-Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:01  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :        87         0         0         0         0
-max. Level        :         4         0         0         0         0
-max. Total        :        13         0         0         0         0
+Time per pass     :  00:00:06  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0         0         0         0         0         0
+max. Level        :         0         0         0         0         0         0
+max. Total        :         0         0         0         0         0         0
 
-Routed            :        44        44        44        44        44
-Vias              :         0         0         0         0         0
-Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         6         6         6         6         6         6
+Vias              :         0         0         0         0         0         0
+Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished

@@ -14999,88 +14999,6 @@ MOC3020-M.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="BTA06-600BRG">
-<packages>
-<package name="TO254P1040X460X1975-3">
-<wire x1="-2.66" y1="-2" x2="-2.66" y2="2.6" width="0.127" layer="51"/>
-<wire x1="-2.66" y1="2.6" x2="7.74" y2="2.6" width="0.127" layer="51"/>
-<wire x1="7.74" y1="2.6" x2="7.74" y2="-2" width="0.127" layer="51"/>
-<wire x1="7.74" y1="-2" x2="-2.66" y2="-2" width="0.127" layer="51"/>
-<wire x1="-2.9" y1="-2.25" x2="-2.9" y2="2.85" width="0.05" layer="39"/>
-<wire x1="-2.9" y1="2.85" x2="7.99" y2="2.85" width="0.05" layer="39"/>
-<wire x1="7.99" y1="2.85" x2="7.99" y2="-2.25" width="0.05" layer="39"/>
-<wire x1="7.99" y1="-2.25" x2="-2.9" y2="-2.25" width="0.05" layer="39"/>
-<circle x="-3.3" y="0.3" radius="0.1" width="0.2" layer="21"/>
-<circle x="-3.3" y="0.3" radius="0.1" width="0.2" layer="51"/>
-<text x="-2.9054" y="2.9054" size="1.27236875" layer="25">&gt;NAME</text>
-<text x="-3.005709375" y="-3.60685" size="1.27241875" layer="27">&gt;VALUE</text>
-<wire x1="-2.66" y1="-2" x2="-2.66" y2="2.6" width="0.127" layer="21"/>
-<wire x1="-2.66" y1="2.6" x2="7.74" y2="2.6" width="0.127" layer="21"/>
-<wire x1="7.74" y1="2.6" x2="7.74" y2="-2" width="0.127" layer="21"/>
-<wire x1="7.74" y1="-2" x2="-2.66" y2="-2" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.27" diameter="1.91" shape="square"/>
-<pad name="2" x="2.54" y="0" drill="1.27" diameter="1.91"/>
-<pad name="3" x="5.08" y="0" drill="1.27" diameter="1.91"/>
-</package>
-</packages>
-<symbols>
-<symbol name="BTA06-600BRG">
-<wire x1="-1.016" y1="0.508" x2="0.254" y2="2.794" width="0.254" layer="94"/>
-<wire x1="0.254" y1="2.794" x2="-2.54" y2="2.794" width="0.254" layer="94"/>
-<wire x1="1.016" y1="2.794" x2="0.254" y2="2.794" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0.508" x2="0" y2="0.508" width="0.254" layer="94"/>
-<wire x1="0" y1="0.508" x2="-0.254" y2="0.508" width="0.254" layer="94"/>
-<wire x1="1.016" y1="2.794" x2="2.54" y2="2.794" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="0.508" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="0.508" x2="-1.905" y2="0.508" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="0.508" x2="-2.54" y2="0.508" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="0.508" x2="-0.254" y2="0.508" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
-<text x="-11.4304" y="5.08018125" size="1.778059375" layer="95">&gt;NAME</text>
-<text x="-11.443" y="-5.085790625" size="1.78003125" layer="96">&gt;VALUE</text>
-<polygon width="0.1524" layer="94">
-<vertex x="-1.016" y="0.508"/>
-<vertex x="-2.286" y="2.794"/>
-<vertex x="0.254" y="2.794"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-0.254" y="0.508"/>
-<vertex x="1.016" y="2.794"/>
-<vertex x="2.286" y="0.508"/>
-</polygon>
-<pin name="A2" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="A1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="G" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BTA06-600BRG" prefix="Q">
-<description>BTA06 Series 600 Vdrm 6 A Flange Mount Standard Triac Thyristor - TO-220AB</description>
-<gates>
-<gate name="G$1" symbol="BTA06-600BRG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO254P1040X460X1975-3">
-<connects>
-<connect gate="G$1" pin="A1" pad="1"/>
-<connect gate="G$1" pin="A2" pad="2"/>
-<connect gate="G$1" pin="G" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Unavailable"/>
-<attribute name="DESCRIPTION" value=" BTA06 Series 600 Vdrm 6 A Flange Mount Standard Triac Thyristor - TO-220AB "/>
-<attribute name="MF" value="STMicroelectronics"/>
-<attribute name="MP" value="BTA06-600BRG"/>
-<attribute name="PACKAGE" value="TO-220 STMicroelectronics"/>
-<attribute name="PRICE" value="None"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="con-lstb" urn="urn:adsk.eagle:library:162">
 <description>&lt;b&gt;Pin Headers&lt;/b&gt;&lt;p&gt;
 Naming:&lt;p&gt;
@@ -15301,6 +15219,75 @@ W = angled&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="BTA41-600BRG">
+<description>&lt;TRIAC BTA41-600BRG, 600V, Gate Trigger 1.3V 100mA, TOP Insulated 3-Pin&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="TO552P460X1530X2985-3P">
+<description>&lt;b&gt;TOP3&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.77" diameter="2.655" shape="square"/>
+<pad name="2" x="5.525" y="0" drill="1.77" diameter="2.655"/>
+<pad name="3" x="11.05" y="0" drill="1.77" diameter="2.655"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.475" y1="3.5" x2="13.525" y2="3.5" width="0.05" layer="51"/>
+<wire x1="13.525" y1="3.5" x2="13.525" y2="-1.6" width="0.05" layer="51"/>
+<wire x1="13.525" y1="-1.6" x2="-2.475" y2="-1.6" width="0.05" layer="51"/>
+<wire x1="-2.475" y1="-1.6" x2="-2.475" y2="3.5" width="0.05" layer="51"/>
+<wire x1="-2.225" y1="3.25" x2="13.275" y2="3.25" width="0.1" layer="51"/>
+<wire x1="13.275" y1="3.25" x2="13.275" y2="-1.35" width="0.1" layer="51"/>
+<wire x1="13.275" y1="-1.35" x2="-2.225" y2="-1.35" width="0.1" layer="51"/>
+<wire x1="-2.225" y1="-1.35" x2="-2.225" y2="3.25" width="0.1" layer="51"/>
+<wire x1="-2.225" y1="0.488" x2="0.537" y2="3.25" width="0.1" layer="51"/>
+<wire x1="13.275" y1="-1.35" x2="13.275" y2="3.25" width="0.2" layer="21"/>
+<wire x1="13.275" y1="3.25" x2="-2.225" y2="3.25" width="0.2" layer="21"/>
+<wire x1="-2.225" y1="3.25" x2="-2.225" y2="0" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BTA41-600BRG">
+<wire x1="5.08" y1="2.54" x2="17.78" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-5.08" x2="17.78" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="19.05" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="19.05" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="A1" x="0" y="0" length="middle"/>
+<pin name="A2" x="0" y="-2.54" length="middle"/>
+<pin name="G" x="22.86" y="0" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BTA41-600BRG" prefix="U">
+<description>&lt;b&gt;TRIAC BTA41-600BRG, 600V, Gate Trigger 1.3V 100mA, TOP Insulated 3-Pin&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://uk.rs-online.com/web/p/products/6871007P"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BTA41-600BRG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO552P460X1530X2985-3P">
+<connects>
+<connect gate="G$1" pin="A1" pad="1"/>
+<connect gate="G$1" pin="A2" pad="2"/>
+<connect gate="G$1" pin="G" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ALLIED_NUMBER" value="70332160" constant="no"/>
+<attribute name="DESCRIPTION" value="TRIAC BTA41-600BRG, 600V, Gate Trigger 1.3V 100mA, TOP Insulated 3-Pin" constant="no"/>
+<attribute name="HEIGHT" value="4.6mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="STMicroelectronics" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="BTA41-600BRG" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="6871007P" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/6871007P" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15338,7 +15325,6 @@ W = angled&lt;p&gt;
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="330"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="330"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="180"/>
-<part name="Q1" library="BTA06-600BRG" deviceset="BTA06-600BRG" device=""/>
 <part name="MOTOR" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" deviceset="AK500/3-H" device="" package3d_urn="urn:adsk.eagle:package:9899/1"/>
 <part name="PINES" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA07-1" device="" package3d_urn="urn:adsk.eagle:package:8341/1"/>
 <part name="TIERRA" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA07-1" device="" package3d_urn="urn:adsk.eagle:package:8341/1"/>
@@ -15357,6 +15343,7 @@ W = angled&lt;p&gt;
 <part name="IC2" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LF353" device="N" package3d_urn="urn:adsk.eagle:package:16409/2"/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
+<part name="U1" library="BTA41-600BRG" deviceset="BTA41-600BRG" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15471,10 +15458,6 @@ W = angled&lt;p&gt;
 <attribute name="NAME" x="100.33" y="-8.6614" size="1.778" layer="95"/>
 <attribute name="VALUE" x="100.33" y="-13.462" size="1.778" layer="96"/>
 </instance>
-<instance part="Q1" gate="G$1" x="134.62" y="-17.78" smashed="yes">
-<attribute name="NAME" x="123.1896" y="-12.69981875" size="1.778059375" layer="95"/>
-<attribute name="VALUE" x="123.177" y="-22.865790625" size="1.78003125" layer="96"/>
-</instance>
 <instance part="MOTOR" gate="-1" x="139.7" y="20.32" smashed="yes">
 <attribute name="NAME" x="138.43" y="21.209" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -15531,6 +15514,10 @@ W = angled&lt;p&gt;
 <instance part="R11" gate="G$1" x="-17.78" y="20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="-19.2786" y="16.51" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-14.478" y="16.51" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U1" gate="G$1" x="127" y="-33.02" smashed="yes">
+<attribute name="NAME" x="146.05" y="-25.4" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="146.05" y="-27.94" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -15697,13 +15684,14 @@ W = angled&lt;p&gt;
 <label x="68.58" y="5.08" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="134.62" y1="-12.7" x2="134.62" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="-10.16" x2="109.22" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-10.16" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
 <label x="139.7" y="-10.16" size="1.778" layer="95" xref="yes"/>
-<wire x1="139.7" y1="-10.16" x2="134.62" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="134.62" y="-10.16"/>
-<pinref part="Q1" gate="G$1" pin="A2"/>
+<wire x1="124.46" y1="-10.16" x2="109.22" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="A2"/>
+<wire x1="127" y1="-35.56" x2="124.46" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-35.56" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="124.46" y="-10.16"/>
 </segment>
 </net>
 <net name="NEUTRO" class="0">
@@ -15794,22 +15782,26 @@ W = angled&lt;p&gt;
 </net>
 <net name="N$8" class="0">
 <segment>
-<wire x1="129.54" y1="-17.78" x2="109.22" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-17.78" x2="109.22" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="-17.78" x2="109.22" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="OK1" gate="-1" pin="A1"/>
 <wire x1="109.22" y1="-20.32" x2="88.9" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="G"/>
+<pinref part="U1" gate="G$1" pin="G"/>
+<wire x1="149.86" y1="-33.02" x2="149.86" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-25.4" x2="121.92" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-25.4" x2="121.92" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="A1"/>
-<wire x1="134.62" y1="-20.32" x2="157.48" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="127" y1="-20.32" x2="157.48" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="-20.32" x2="157.48" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="12.7" x2="152.4" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="MOTOR" gate="-3" pin="KL"/>
 <wire x1="152.4" y1="12.7" x2="152.4" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="10.16" x2="144.78" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="A1"/>
+<wire x1="127" y1="-33.02" x2="127" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">

@@ -1,9 +1,9 @@
 // Pines
-int Referencia = A0;
+int Referencia = A7;
 int Encoder = A1;
 byte CERO = 2;
 //**************** SALIDAS ********************************//
-byte TRIAC = 5; //
+byte TRIAC = 9; //
 
 //Variables
 
@@ -26,7 +26,7 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
   pinMode(CERO, INPUT); //INT1 PASO POR CERO
-  digitalWrite(CERO, HIGH);
+  //digitalWrite(CERO, HIGH);
   pinMode(TRIAC, OUTPUT);
   digitalWrite(TRIAC, LOW); //Inicializacion del disparo del triac (off)
   Serial.println("Encendido");
@@ -40,10 +40,12 @@ void setup() {
 
 void loop() {
   Ref = analogRead(Referencia);
-  En = analogRead(Encoder);  
-  salida = Compute(En,Ref);
-   disparotriac = map(salida, 0, 1024, 500, 7000);
+  //En = analogRead(Encoder);  
+  //salida = Compute(En,Ref);
+   disparotriac = map(Ref, 0, 1024, 3000, 7000);
+   //Serial.println(disparotriac);
    Serial.println(Ref);
+   //delay(1000);
 }
 
 //* Interrupción de detección de pasovelocidada por cero y disparo del triac *//
