@@ -15506,13 +15506,13 @@ W = angled&lt;p&gt;
 <attribute name="NAME" x="8.89" y="6.1214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="8.89" y="10.922" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="T1" gate="G1" x="-2.54" y="7.62" smashed="yes" rot="R180">
-<attribute name="NAME" x="7.62" y="0" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="7.62" y="2.54" size="1.778" layer="96" rot="R180"/>
+<instance part="T1" gate="G1" x="-2.54" y="7.62" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.62" y="15.24" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="7.62" y="12.7" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R9" gate="G$1" x="-5.08" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="-6.5786" y="16.51" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-1.778" y="16.51" size="1.778" layer="96" rot="R90"/>
+<instance part="R9" gate="G$1" x="-5.08" y="-7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="-6.5786" y="-11.43" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-1.778" y="-11.43" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+6" gate="VCC" x="-5.08" y="30.48" smashed="yes">
 <attribute name="VALUE" x="-7.62" y="27.94" size="1.778" layer="96" rot="R90"/>
@@ -15622,12 +15622,11 @@ W = angled&lt;p&gt;
 <wire x1="83.82" y1="83.82" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G1" pin="C"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="-5.08" y1="-15.24" x2="-5.08" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-12.7" x2="-5.08" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <junction x="-5.08" y="-12.7"/>
 </segment>
 </net>
@@ -15665,10 +15664,11 @@ W = angled&lt;p&gt;
 <wire x1="127" y1="83.82" x2="127" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="T1" gate="G1" pin="C"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
-<wire x1="-5.08" y1="27.94" x2="-5.08" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="12.7" x2="-5.08" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="25.4" x2="-5.08" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="25.4" x2="-5.08" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-5.08" y="25.4"/>
 </segment>
@@ -15876,18 +15876,6 @@ W = angled&lt;p&gt;
 <wire x1="-2.54" y1="7.62" x2="0" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="T1" gate="G1" pin="E"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="15.24" x2="-5.08" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="A" pin="+IN"/>
-<wire x1="-22.86" y1="7.62" x2="-10.16" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="12.7" x2="-5.08" y2="12.7" width="0.1524" layer="91"/>
-<junction x="-5.08" y="12.7"/>
-</segment>
-</net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
@@ -15897,6 +15885,19 @@ W = angled&lt;p&gt;
 <wire x1="-17.78" y1="12.7" x2="-17.78" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="12.7" x2="-22.86" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-17.78" y="12.7"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="T1" gate="G1" pin="E"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="A" pin="+IN"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="7.62" x2="-10.16" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="0" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="0" x2="-10.16" y2="0" width="0.1524" layer="91"/>
+<junction x="-5.08" y="0"/>
 </segment>
 </net>
 </nets>
